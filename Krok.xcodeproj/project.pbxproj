@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D7A940DCE91B8556880A8C7 /* Pods_Krok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B8BE9A11FCDE2CA943CAF /* Pods_Krok.framework */; };
+		F703E7E8289285F400C0260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703E7E7289285F400C0260D /* AppDelegate.swift */; };
+		F703E7EA289285F400C0260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703E7E9289285F400C0260D /* SceneDelegate.swift */; };
+		F703E7EC289285F400C0260D /* CitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F703E7EB289285F400C0260D /* CitiesVC.swift */; };
+		F703E7EF289285F400C0260D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F703E7ED289285F400C0260D /* Main.storyboard */; };
+		F703E7F1289285F600C0260D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F703E7F0289285F600C0260D /* Assets.xcassets */; };
+		F703E7F4289285F600C0260D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F703E7F2289285F600C0260D /* LaunchScreen.storyboard */; };
+		F7661FBB2892A8370034A98F /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7661FBA2892A8370034A98F /* CityCell.swift */; };
+		F7661FBD2892A8D30034A98F /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7661FBC2892A8D30034A98F /* Objects.swift */; };
+		F7661FBF2892B34C0034A98F /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7661FBE2892B34C0034A98F /* PlacesVC.swift */; };
+		F7661FC12892B3AA0034A98F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7661FC02892B3AA0034A98F /* NetworkManager.swift */; };
+		F79E2A222897C72D00F45EBF /* DetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79E2A212897C72D00F45EBF /* DetailedVC.swift */; };
+		F7F916982897E03F0055F88A /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F916972897E03E0055F88A /* PlaceCell.swift */; };
+		F7F9169A289829500055F88A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F91699289829500055F88A /* TabBarController.swift */; };
+		F7F9169C289834980055F88A /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F9169B289834980055F88A /* SettingsVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A96B8BE9A11FCDE2CA943CAF /* Pods_Krok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFCB020A36E31A988DF5D7F /* Pods-Krok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krok.debug.xcconfig"; path = "Target Support Files/Pods-Krok/Pods-Krok.debug.xcconfig"; sourceTree = "<group>"; };
+		F703E7E4289285F400C0260D /* Krok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F703E7E7289285F400C0260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F703E7E9289285F400C0260D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F703E7EB289285F400C0260D /* CitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesVC.swift; sourceTree = "<group>"; };
+		F703E7EE289285F400C0260D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F703E7F0289285F600C0260D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F703E7F3289285F600C0260D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F703E7F5289285F600C0260D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7661FBA2892A8370034A98F /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		F7661FBC2892A8D30034A98F /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		F7661FBE2892B34C0034A98F /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
+		F7661FC02892B3AA0034A98F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F79E2A212897C72D00F45EBF /* DetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVC.swift; sourceTree = "<group>"; };
+		F7F916972897E03E0055F88A /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		F7F91699289829500055F88A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F7F9169B289834980055F88A /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		FC89AA5A510FEB49AC24628F /* Pods-Krok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krok.release.xcconfig"; path = "Target Support Files/Pods-Krok/Pods-Krok.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F703E7E1289285F400C0260D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A940DCE91B8556880A8C7 /* Pods_Krok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49CA3871B1212464F9E17107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A96B8BE9A11FCDE2CA943CAF /* Pods_Krok.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59101D8912BE89A34DBCA89F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCFCB020A36E31A988DF5D7F /* Pods-Krok.debug.xcconfig */,
+				FC89AA5A510FEB49AC24628F /* Pods-Krok.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F703E7DB289285F400C0260D = {
+			isa = PBXGroup;
+			children = (
+				F703E7E6289285F400C0260D /* Krok */,
+				F703E7E5289285F400C0260D /* Products */,
+				59101D8912BE89A34DBCA89F /* Pods */,
+				49CA3871B1212464F9E17107 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F703E7E5289285F400C0260D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F703E7E4289285F400C0260D /* Krok.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F703E7E6289285F400C0260D /* Krok */ = {
+			isa = PBXGroup;
+			children = (
+				F703E7E7289285F400C0260D /* AppDelegate.swift */,
+				F703E7E9289285F400C0260D /* SceneDelegate.swift */,
+				F70E4EB6289B3D4000A25492 /* VC */,
+				F70E4EB7289B3D5500A25492 /* Cells */,
+				F70E4EB8289B3D9500A25492 /* NetworkManager */,
+				F703E7ED289285F400C0260D /* Main.storyboard */,
+				F703E7F0289285F600C0260D /* Assets.xcassets */,
+				F703E7F2289285F600C0260D /* LaunchScreen.storyboard */,
+				F703E7F5289285F600C0260D /* Info.plist */,
+			);
+			path = Krok;
+			sourceTree = "<group>";
+		};
+		F70E4EB6289B3D4000A25492 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F7F91699289829500055F88A /* TabBarController.swift */,
+				F703E7EB289285F400C0260D /* CitiesVC.swift */,
+				F7661FBE2892B34C0034A98F /* PlacesVC.swift */,
+				F79E2A212897C72D00F45EBF /* DetailedVC.swift */,
+				F7F9169B289834980055F88A /* SettingsVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F70E4EB7289B3D5500A25492 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F7661FBA2892A8370034A98F /* CityCell.swift */,
+				F7F916972897E03E0055F88A /* PlaceCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F70E4EB8289B3D9500A25492 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F7661FC02892B3AA0034A98F /* NetworkManager.swift */,
+				F7661FBC2892A8D30034A98F /* Objects.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F703E7E3289285F400C0260D /* Krok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F703E7F8289285F600C0260D /* Build configuration list for PBXNativeTarget "Krok" */;
+			buildPhases = (
+				4BE93DDF0455A8EFEB185EB2 /* [CP] Check Pods Manifest.lock */,
+				F703E7E0289285F400C0260D /* Sources */,
+				F703E7E1289285F400C0260D /* Frameworks */,
+				F703E7E2289285F400C0260D /* Resources */,
+				9852B3B205B0532CDDD31F7C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Krok;
+			productName = Krok;
+			productReference = F703E7E4289285F400C0260D /* Krok.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F703E7DC289285F400C0260D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F703E7E3289285F400C0260D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F703E7DF289285F400C0260D /* Build configuration list for PBXProject "Krok" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F703E7DB289285F400C0260D;
+			productRefGroup = F703E7E5289285F400C0260D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F703E7E3289285F400C0260D /* Krok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F703E7E2289285F400C0260D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F703E7F4289285F600C0260D /* LaunchScreen.storyboard in Resources */,
+				F703E7F1289285F600C0260D /* Assets.xcassets in Resources */,
+				F703E7EF289285F400C0260D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BE93DDF0455A8EFEB185EB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Krok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9852B3B205B0532CDDD31F7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krok/Pods-Krok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krok/Pods-Krok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Krok/Pods-Krok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F703E7E0289285F400C0260D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79E2A222897C72D00F45EBF /* DetailedVC.swift in Sources */,
+				F7661FBF2892B34C0034A98F /* PlacesVC.swift in Sources */,
+				F703E7EC289285F400C0260D /* CitiesVC.swift in Sources */,
+				F7F9169A289829500055F88A /* TabBarController.swift in Sources */,
+				F7F9169C289834980055F88A /* SettingsVC.swift in Sources */,
+				F7661FBD2892A8D30034A98F /* Objects.swift in Sources */,
+				F7661FC12892B3AA0034A98F /* NetworkManager.swift in Sources */,
+				F703E7E8289285F400C0260D /* AppDelegate.swift in Sources */,
+				F7661FBB2892A8370034A98F /* CityCell.swift in Sources */,
+				F703E7EA289285F400C0260D /* SceneDelegate.swift in Sources */,
+				F7F916982897E03F0055F88A /* PlaceCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F703E7ED289285F400C0260D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F703E7EE289285F400C0260D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F703E7F2289285F600C0260D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F703E7F3289285F600C0260D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F703E7F6289285F600C0260D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F703E7F7289285F600C0260D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F703E7F9289285F600C0260D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFCB020A36E31A988DF5D7F /* Pods-Krok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G995Z6QQSS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Krok/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Organization.Krok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F703E7FA289285F600C0260D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC89AA5A510FEB49AC24628F /* Pods-Krok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G995Z6QQSS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Krok/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Organization.Krok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F703E7DF289285F400C0260D /* Build configuration list for PBXProject "Krok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F703E7F6289285F600C0260D /* Debug */,
+				F703E7F7289285F600C0260D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F703E7F8289285F600C0260D /* Build configuration list for PBXNativeTarget "Krok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F703E7F9289285F600C0260D /* Debug */,
+				F703E7FA289285F600C0260D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F703E7DC289285F400C0260D /* Project object */;
+}
